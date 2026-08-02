@@ -96,7 +96,7 @@ def add_parameters(parameters: protocol_api.Parameters):
         variable_name="pre_wet_volume",
         display_name="Pre-wet volume",
         description="Extra vol to clear air lock",
-        default=10,
+        default=20,
         minimum=0,
         maximum=30,
         unit="uL"
@@ -232,7 +232,7 @@ def run(protocol: protocol_api.ProtocolContext):
     protocol.delay(seconds=wait_time_aspirate)
 
     # Reverse pre-wet: clear trapped air / normalize meniscus
-    pipette.dispense(p.pre_wet_volume, source_well)
+    pipette.dispense(p.pre_wet_volume/2, source_well)
     protocol.delay(seconds=wait_time_prewet_return)
 
     pipette.move_to(source_well.top(z=5), speed=20)

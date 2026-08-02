@@ -2,19 +2,19 @@ cff-version: 1.2.0
 message: "If you use this protocol, please cite the preprint below and/or this repository."
 title: "myrPlate Tissue Casting: An Opentrons Flex Protocol for Automated Collagen Master-Mix Dispensing"
 authors:
-  - family-names: "[Your last name]"
-    given-names: "[Your first name]"
-    affiliation: "[Your institution]"
+  - family-names: "Goodarzi Hosseinabadi"
+    given-names: "Hossein"
+    affiliation: "Technical University of Eindhoven"
 date-released: 2026-08-01
 version: "20.0"
 repository-code: "https://github.com/<your-username>/<your-repo>"
 preferred-citation:
   type: article
-  title: "myrPlate Tissue Casting: An Opentrons Flex Protocol for Automated Collagen Master-Mix Dispensing"
+  title: "myrPlate Tissue Casting: An Opentrons Flex Protocol for Bubble-Free Automated Collagen Master-Mix Dispensing in Elliptical Ring format"
   authors:
-    - family-names: "[Your last name]"
-      given-names: "[Your first name]"
+    - family-names: "Goodarzi Hosseinabadi"
+      given-names: "Hossein"
   journal: "bioRxiv"
   year: 2026
-  doi: "[add once assigned]"
-  url: "[add bioRxiv link once posted]"
+  doi: "TBA"
+  url: "TBA"

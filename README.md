@@ -6,8 +6,8 @@ Automated dispensing of cell-laden collagen master mix into a 48-well **myrPlate
 96-well deep-well source plate and dispenses into one 4-well column segment of the
 myrPlate, tracing a small ellipse per well to reduce bubble/edge artifacts.
 
-📄 **Preprint / manuscript:** `[DOI or bioRxiv link — add once posted]`
-🎥 **Video of a live run:** `[YouTube/Figshare link — add once filmed]`
+📄 **Preprint / manuscript:** `[DOI or bioRxiv link — will be added once posted]`
+🎥 **Video of a live run:** [Myrplate casting-V20-5Xspeed-Compact.mp4](Myrplate%20casting-V20-5Xspeed-Compact.mp4) (5× sped up)
 
 ---
 
@@ -45,18 +45,16 @@ myrPlate, tracing a small ellipse per well to reduce bubble/edge artifacts.
 | `overlap` | 2 | Extra full sweeps around the ellipse (0 = single pass) |
 | `volume_per_well` | 193 µL | Dispense volume per myrPlate well |
 
-## Estimated run time
+## Run time
 
-Based purely on the protocol's own declared flow rates and built-in delays
-(aspirate action + 2 s settle, reverse pre-wet + 1 s settle, touch-tip, tip
-pickup/drop, and the 4-well dispense loop at default parameters):
+A lower-bound estimate computed purely from the protocol's own declared flow
+rates and built-in delays (aspirate action + 2 s settle, reverse pre-wet + 1 s
+settle, touch-tip, tip pickup/drop, and the 4-well dispense loop at default
+parameters) gives **60 seconds of pipetting action**, excluding Flex
+homing/deck-scan and gantry travel time.
 
-**≈ 60–70 seconds of pipetting action** (excludes Flex homing/deck-scan and
-gantry travel time, which the app adds on top). This is a lower-bound estimate,
-not a measured value.
-
-> **TODO:** replace with the actual run time from the Opentrons App run summary
-> after filming, e.g. *"Total run time: Xm Ys (measured, N=1, \[date])."*
+The linked demonstration video runs 41.2 s at 5× playback speed, which implies
+a real-time run of roughly **3.5 minutes**.
 
 ## Usage
 
@@ -69,7 +67,8 @@ not a measured value.
 ## Repo contents
 
 ```
-myrPlate_tissue_casting-1Ch1ml_V20.py   # protocol
+myrPlate_tissue_casting-1Ch1ml_V20.py           # protocol
+Myrplate casting-V20-5Xspeed-Compact.mp4        # demonstration video (5x speed)
 README.md
 LICENSE
 CITATION.cff
@@ -82,5 +81,4 @@ the DOI once assigned) and/or this repository.
 
 ## License
 
-MIT — see `LICENSE`. Change this before publishing if your institution requires
-a different license.
+MIT — see `LICENSE`.
